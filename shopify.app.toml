@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "matrix-app"
+client_id = "cba3679d993f16730fffee0b6e72ba1d"
+application_url = "https://thick-drops-plant-dutch.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://thick-drops-plant-dutch.trycloudflare.com/auth/callback",
+  "https://thick-drops-plant-dutch.trycloudflare.com/auth/shopify/callback",
+  "https://thick-drops-plant-dutch.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-f83845c0.myshopify.com"
